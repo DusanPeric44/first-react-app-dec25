@@ -7,8 +7,14 @@ const MenuScreen = (props) => {
     <View>
       <Text style={styles.text}>Welcome to Menu Screen</Text>
       <Button
+        style={styles.btn}
         title="Go to List Screen"
         onPress={() => props.navigation.navigate("List")}
+      />
+      <Button
+        style={styles.btn}
+        title="Go to Students Screen"
+        onPress={() => props.navigation.navigate("Students")}
       />
     </View>
   );
@@ -19,6 +25,9 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 20,
     marginVertical: 20,
+  },
+  btn: {
+    marginBottom: 20,
   },
 });
 
